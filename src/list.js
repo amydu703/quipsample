@@ -1,6 +1,8 @@
 var React = require('react');
 var Ajax  = require('ajax');
 var Item  = require('./item');
+var User  = require('./user');
+
 var List = React.createClass({
     getInitialState: function() {
         return {data: []}
@@ -21,10 +23,7 @@ var List = React.createClass({
                 <header className = "header">
                     <span>返回</span>
                     <span>添加</span>
-                    <dl>
-                        <dt>头像</dt>
-                        <dd>名字</dd>
-                    </dl>
+                <User />
                 </header>
                 <ul className = "list">
                     {item}
