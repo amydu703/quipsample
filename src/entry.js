@@ -3,6 +3,9 @@ var Cookies = require('cookies-js');
 var Ajax = require('ajax');
 var Login = require('./login');
 var List  = require('./list');
+var User  = require('./user');
+
+
 var App = React.createClass({
     getInitialState: function() {
         return {
